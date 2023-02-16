@@ -6,8 +6,8 @@ html {
 *::before {
   box-sizing: inherit;
 }
-.slick-prev ,
-.slick-next {
+.slick-prev.slick-arrow ,
+.slick-next.slick-arrow {
   display: none;
 }
 html,
