@@ -14,6 +14,7 @@ $(function () {
     nextArrow: '<button type = "button" class = "slick-next"></ button>'
 
 
+
   });
   $('.blog-page__slider').slick({
 
