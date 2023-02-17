@@ -15,11 +15,11 @@
   }
 }
 .logo__title{
-  font-size: 36px;
+  font-size: 26px;
   font-family: 'Rubik-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
-  color: $title;
+  color: $default;
 
 }
 .menu {
@@ -303,7 +303,7 @@ width: 16px;
 height: 6px;
 
 border: none;
-background: red;
+background: $accent-color;
 
 }
 .slick-dots li + li {
