@@ -1,3 +1,4 @@
+
 @media (max-width: 1200px) {
   .header{
     &__inner{
@@ -8,15 +9,18 @@
 
   &__img {
     width: 100%;
-    padding-left: 5px;
+    padding-left: 0px;
   }
     &__title {
     max-width: 370px;
     width: 100%;
     font-size: 18px;
     line-height: 32px;
+    // color: black;
+    font-family: 'Rubik-SemiBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
     color: black;
-    @extend %roboto-700;
     margin-bottom: 5px;
   }
     &__text {
@@ -300,7 +304,18 @@
   gap: 5px;
 }
 }
-@media (max-width: 620px) {
+@media (max-width: 680px) {
+      .top-slider {
+
+  &__img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__content{
+    flex-wrap: wrap;
+  }
+}
    .product{
     padding: 50px 0;
       &__items{
@@ -440,13 +455,13 @@
 
 }
 @media (max-width: 450px) {
-     .top-slider {
-     &__item {
-    .top-slider__img{
-    display: none;
-  }
-  }
-     }
+//     .top-slider {
+
+//   &__img {
+//     width: 100%;
+//     margin-top: 20px;
+//   }
+// }
    .footer-top{
     &__form{
       flex-wrap: wrap;
