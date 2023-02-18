@@ -1750,8 +1750,7 @@ text-transform: uppercase;
 .product-tabs {
 
 		padding-top: 10px;
-    // display: flex;
-    // justify-content: center;
+
 
 		&__top {
      margin-bottom: 10px;
@@ -1771,7 +1770,7 @@ text-transform: uppercase;
       text-align: center;
       margin-bottom: 10px;
       & + .product-tabs__top-item{
-        margin-left: 15px;
+        margin-left: 30px;
       }
 		}
     &__top-item--active{
@@ -1806,7 +1805,7 @@ text-transform: uppercase;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
+        gap: 15px;
       }
 		}
 }
