@@ -343,7 +343,9 @@ cursor: pointer;
 .info {
 display: flex;
 justify-content: space-between;
-margin-bottom: 0px;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
 position: relative;
 &::before,
 &::after {
@@ -359,8 +361,16 @@ left: 0;
  right: 0;
 }
 &__item {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   padding: 0px 0px;
+
   width: 370px;
+}
+&__item-content {
+ margin-left: 10px;
+//  padding-left: 10px;
 }
 &__item-title {
   margin: 0px 0 0px;
@@ -1793,7 +1803,10 @@ text-transform: uppercase;
 		&__content-item {
       display: none;
       &.product-tabs__content-item--active{
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
       }
 		}
 }
