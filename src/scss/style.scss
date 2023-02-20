@@ -3,9 +3,81 @@
 @import "fonts";
 @import "global";
 
+// @font-face {
+//   font-family: 'Rubik-Regular';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Rubik-Regular'),
+//    url('../fonts/Rubik-Regular.woff2') format('woff2'),
+//    url('../fonts/Rubik-Regular.woff') format('woff');
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Rubik-Medium';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: local('Rubik-Medium'),
+//    url('../fonts/Rubik-Medium.woff2') format('woff2'),
+//    url('../fonts/Rubik-Medium.woff') format('woff');
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Rubik-SemiBold';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('Rubik-SemiBold'),
+//    url('../fonts/Rubik-SemiBold.woff2') format('woff2'),
+//    url('../fonts/Rubik-SemiBold.woff') format('woff');
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Rubik-Bold';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Rubik-Bold'),
+//    url('../fonts/Rubik-Bold.woff2') format('woff2'),
+//    url('../fonts/Rubik-Bold.woff') format('woff');
+//   font-display: swap;
+// }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat-Bold'),
+   url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+   url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat-Medium'),
+   url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+   url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+   url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+   url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
 .product-item{
       &__img-box{
-        height: 270px;
+        height: 210px;
       }
     }
 
@@ -22,9 +94,9 @@
 }
 .logo__title{
   font-size: 26px;
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   color: $default;
 
 }
@@ -43,7 +115,7 @@
     color: $default;
     padding: 0 2px 1px;
     transition: all .4s;
-    @extend %rubik-400;
+    @extend %rubik-500;
     &:hover {
       color: $accent-color;
       border-bottom: 1px solid $accent-color;
@@ -571,7 +643,7 @@ text-transform: uppercase;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: 10px 5px;
+      grid-gap: 15px ;
 		}
 
 		// .product__link
@@ -600,11 +672,11 @@ text-transform: uppercase;
           }
         }
         .product-item__img-box{
-          max-height: 270px;
+          max-height: 210px;
           height: 100%;
           min-width: 200px;
           margin-bottom: 0;
-          img{
+        .product-item__img-box  img{
             height: 195px;
             width: 186px;
           }
@@ -663,10 +735,16 @@ text-transform: uppercase;
           display: block;
         }
         .product-item__title{
-          order: -1;
-          width: 100%;
-          padding: 0;
-          margin-top: 0;
+          // font-family: 'Rubik-Bold';
+          font-style: normal;
+
+          font-weight: 700;
+          font-size: 12px;
+          color: #092a3b;
+          // order: -1;
+          // width: 100%;
+          // padding: 0;
+          margin-top: 10px;
           margin-bottom: 10px;
         }
         .product-item__price{
@@ -696,7 +774,7 @@ text-transform: uppercase;
 
 		&__img-box {
       position: relative;
-      height: 370px;
+      height: 210px;
       overflow: hidden;
 
 		}
@@ -759,10 +837,10 @@ text-transform: uppercase;
 
 		// .product-item__title
 
-		&__title {
-      color: $title;
-      padding: 10px 0 10px;
-		}
+		// &__title {
+    //   color: $title;
+    //   padding: 10px 0 10px;
+		// }
 
 		// .product-item__price
 
@@ -809,10 +887,10 @@ margin-top: 10px;
 font-size: 12px;
 line-height: 12px;
 position: absolute;
-top: 10px;
+top: 0px;
 right: 10px;
 &:hover{
- box-shadow: 0px 7px 20px 0px #3891c1;
+ box-shadow: 0px 7px 20px 0px #092a3b;
  transition: all .3s;
 }
       }
@@ -1368,7 +1446,7 @@ text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
     // grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    // gap: 5px;
     border-bottom: 1px solid #ececec;
     .product-item{
       margin-bottom: 40px;
@@ -1766,6 +1844,9 @@ text-transform: uppercase;
 		// .product-tabs__top-item
 
 		&__top-item {
+       font-family: 'Rubik-SemiBold';
+      font-style: normal;
+      font-weight: 600;
       display: inline-block;
       text-align: center;
       margin-bottom: 10px;
@@ -1795,6 +1876,7 @@ text-transform: uppercase;
 		// .product-tabs__content
 
 		&__content {
+      width: 100%;;
 		}
 
 		// .product-tabs__content-item
